@@ -12,7 +12,7 @@
 	* HTML, JavaScript
 
 # How to Get & Run  Application:
-	* From GitHub Repository https://github.com/Partybarge02/?
+	* From GitHub Repository https://github.com/Partybarge02/skiResortMap
 	* Fork or Clone Repo to your Device
 	* From Repro open index.html with browser of choice.
 	* Enjoy
