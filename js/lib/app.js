@@ -92,7 +92,7 @@ function Resort(data) {
   self.gpsloc = ko.observable(data.gpsloc);
   self.icon = ko.observable(data.icon);
   self.apiLoc = ko.observable(data.apiLoc);
-};
+}
 
 
 //* ==========ViewModel=============*//
@@ -116,8 +116,8 @@ function openweatermapPulls(resortItem) {
     .done(function(data) {
     weather = data.weather;
     main = data.main;
-    console.log(weather)
-    console.log(main)
+    console.log(weather);
+    console.log(main);
         // Set infoWindo content for successful AJAX request:
         infoWindow.setContent('<div class="infowindow">' +
           '<div class="info_wrapper">' +
@@ -133,7 +133,7 @@ function openweatermapPulls(resortItem) {
         map.panTo(resortItem.marker.position);
         google.maps.event.addListener(infoWindow,'closeclick',function(){
         map.panTo(mapCenter);
-        })
+        });
     })
     // If AJAX request fails:
     .fail(function() {
@@ -186,7 +186,7 @@ function openweatermapPulls(resortItem) {
               skiRes.marker.setAnimation(null);
             }, 2250);
             map.panTo(skiRes.marker.position);
-        }
+        };
 
     // Handle users input to filter resorts:
     // Create a ko.observable of the inputs:
@@ -203,7 +203,7 @@ function openweatermapPulls(resortItem) {
             } return filter;
         });
     });
-};
+}
 
 //Apply viewmodel with knockout.js
 ko.applyBindings(ViewModel());
@@ -211,12 +211,11 @@ ko.applyBindings(ViewModel());
  // Alert that App has failed to load
 function mapError() {
   alert("Google Maps failed to Load :( Check your internet Connection.");
-};
+}
 
 function initApp(){
   initMap();
-};
-
+}
 
 
 
