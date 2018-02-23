@@ -60,7 +60,7 @@ var resorts = [
 
 // Set Map Varibles:
 var map;
-var mapCenter = {lat: 35.590000, lng: -82.509046};
+var mapCenter = {lat: 35.900000, lng: -82.509046};
 var marker;
 var infoWindow;
 var content;
@@ -179,13 +179,6 @@ function openweatermapPulls(resortItem) {
     //Tie list with Marker on click:
     self.filteredList = function(skiRes) {
         google.maps.event.trigger(skiRes.marker, 'click');
-        if (self.name) {
-            skiRes.marker.setAnimation(google.maps.Animation.BOUNCE);
-            }
-            setTimeout(function() {
-              skiRes.marker.setAnimation(null);
-            }, 2250);
-            map.panTo(skiRes.marker.position);
         };
 
     // Handle users input to filter resorts:

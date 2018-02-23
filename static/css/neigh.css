@@ -2,7 +2,7 @@ html,body {
     font-family: Helvetica, sans-serif;
     height: 100%;
     margin: 0px;
-    padding:10px;
+    padding:0px;
 }
 
 #map {
@@ -23,8 +23,8 @@ body{
 
 #resortList {
     position: absolute;
-    z-index: 5;
-    padding: 10px;
+    z-index: 2;
+    padding: 0px;
     background-color: #362f20;
     color: #fff;
 }
@@ -38,7 +38,7 @@ body{
 	    overflow: scroll;
 	}
 	#map {
-	height: 70%;
+	height: 55%;
 	width:100%;
 	}
 }
