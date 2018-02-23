@@ -76,7 +76,10 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         mapTypeControl: true,
         mapTypeControlOptions: {
-            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+          position: google.maps.ControlPosition.TOP_RIGHT,
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+
         }
 });
 
